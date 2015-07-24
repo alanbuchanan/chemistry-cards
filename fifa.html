@@ -28,12 +28,10 @@
 			<div ng-repeat="card in cards | filter:itemFilter" class="card_background">
 				<div class="card_title">{{card.name | uppercase}}</div> 
 				<div class="card_properties">
-					<!-- <div ng-repeat="attr in card.attrs">{{attr}} <span class="card_properties_number">+{{card.attrs.length > 2 ? 2 : 3}}</span></div> -->
 					<div ng-repeat="attr in card.attrs">{{attr}} <span class="card_properties_number">+{{num(card.attrs)}}</span></div>
 				</div>
 			</div>
 		</div>
 		<script src="ang.js"></script>
-		<script src="animations.js"></script>
 	</body>
 </html>
