@@ -9,30 +9,30 @@ angular.module('chemistry', [])
 
 		//18 total
 		$scope.cards = [
-			{ name: 'Sniper', 		attrs: ['shooting', 'dribbling'] },
+			{ name: 'Sniper', 	attrs: ['shooting', 'dribbling'] },
 			{ name: 'Finisher', 	attrs: ['shooting', 'physical'] },
-			{ name: 'Deadeye', 		attrs: ['shooting', 'passing'] },
+			{ name: 'Deadeye', 	attrs: ['shooting', 'passing'] },
 			{ name: 'Marksman', 	attrs: ['shooting', 'dribbling', 'physical'] },
-			{ name: 'Hawk', 		attrs: ['pace', 'shooting', 'physical'] },
-			{ name: 'Artist', 		attrs: ['passing', 'dribbling'] },
+			{ name: 'Hawk', 	attrs: ['pace', 'shooting', 'physical'] },
+			{ name: 'Artist', 	attrs: ['passing', 'dribbling'] },
 			{ name: 'Architect', 	attrs: ['passing', 'physical'] },
 			{ name: 'Powerhouse', 	attrs: ['passing', 'defending'] },
-			{ name: 'Maestro', 		attrs: ['shooting', 'passing', 'dribbling'] },
-			{ name: 'Engine', 		attrs: ['pace', 'passing', 'dribbling'] },
+			{ name: 'Maestro', 	attrs: ['shooting', 'passing', 'dribbling'] },
+			{ name: 'Engine', 	attrs: ['pace', 'passing', 'dribbling'] },
 			{ name: 'Sentinel', 	attrs: ['defending', 'physical'] },
 			{ name: 'Guardian', 	attrs: ['dribbling', 'defending'] },
 			{ name: 'Gladiator', 	attrs: ['shooting', 'defending'] },
 			{ name: 'Backbone', 	attrs: ['passing', 'defending', 'physical'] },
-			{ name: 'Anchor', 		attrs: ['pace', 'defending', 'physical'] },
-			{ name: 'Hunter', 		attrs: ['pace', 'shooting'] },
+			{ name: 'Anchor', 	attrs: ['pace', 'defending', 'physical'] },
+			{ name: 'Hunter', 	attrs: ['pace', 'shooting'] },
 			{ name: 'Catalyst', 	attrs: ['pace', 'passing'] },
-			{ name: 'Shadow', 		attrs: ['pace', 'defending'] }
+			{ name: 'Shadow', 	attrs: ['pace', 'defending'] }
 		];
 		
 		$scope.options = [
-			{ name: 'pace', 		selected: false },
+			{ name: 'pace', 	selected: false },
 			{ name: 'shooting', 	selected: false },
-			{ name: 'passing', 		selected: false },
+			{ name: 'passing', 	selected: false },
 			{ name: 'dribbling', 	selected: false },
 			{ name: 'defending', 	selected: false },
 			{ name: 'physical', 	selected: false }
@@ -42,8 +42,6 @@ angular.module('chemistry', [])
 		{
 			return arr.length > 2 ? 2 : 3;
 		}
-
-		$scope.count = true;
 
 		$scope.itemFilter = function(item) {
 			var filters = $scope.options.filter(function(element, idx, array){
